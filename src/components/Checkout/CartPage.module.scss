@@ -1,0 +1,114 @@
+.checkoutBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1b1a20;
+  width: 450px;
+ height: 100%;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  margin: auto;
+  overflow-y: auto;
+  max-height: 650px;
+}
+.header {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.icon {
+  font-size: 25px;
+}
+.headerTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.title {
+  margin-top: 10em;
+  color: white;
+}
+.emptyCartIcon {
+  margin-top: 5em;
+  margin-left: 2em;
+}
+.close {
+  color: #ababac;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: -40px;
+  background-color: #1b1a20;
+  padding: 10px 15px;
+  width: 15px;
+}
+.close:hover {
+  color: #858588;
+}
+.quantity {
+  position: absolute;
+  background-color: #eabf00;
+  height: 12px;
+  width: 12px;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  margin-top: 50px;
+}
+.products {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.products::-webkit-scrollbar {
+  width: 8px;
+}
+
+.products::-webkit-scrollbar-thumb {
+  background-color: rgba(12, 11, 16);
+  border-radius: 10px;
+}
+
+.products::-webkit-scrollbar-track {
+  background-color: #1b1a20;
+}
+
+.products {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #eee;
+}
+
+.products {
+  scrollbar-width: auto;
+  scrollbar-color: #666 #eee;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 743px) {
+  .checkoutBar {
+    width: 100%;
+  }
+  .emptyCartIcon {
+    width: 300px;
+    margin-left: 10px;
+  }
+  .close {
+    margin-left: 1px;
+  }
+  .container {
+    overflow-y: auto;
+    max-height: 100%;
+  }
+  .products {
+    height: 450px;
+  }
+}

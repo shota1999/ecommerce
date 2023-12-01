@@ -1,0 +1,37 @@
+$primary-color: #1b1a20;
+$secondary-color: #ababac;
+$hover-color: #858588;
+
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3em;
+
+  .line {
+    width: 200px;
+  }
+
+  > h1 {
+    color: white;
+  }
+
+  
+}
+.closeCheckout {
+  color: $secondary-color;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: -40px;
+  background-color: $primary-color;
+  padding: 10px 15px;
+  width: 15px;
+
+  &:hover {
+    color: $hover-color;
+  }
+}

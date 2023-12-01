@@ -1,0 +1,83 @@
+$primary-background-color: rgb(224, 224, 224);
+$label-color: rgb(182, 178, 178);
+$button-background: lightgray;
+$button-hover-color: gray;
+$error-color: rgb(201, 46, 46);
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  > input {
+    width: 180px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    background-color: $primary-background-color;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 30px;
+  gap: 10px;
+  margin-top: 5rem;
+
+  .label {
+    color: $label-color;
+    margin-bottom: -10px;
+    font-size: smaller;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transform: translateY(300%);
+  right: 10%;
+  gap: 10px;
+
+  > button {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    height: 35px;
+    padding: 0 10px;
+    background-color: $button-background;
+    font-weight: bold;
+    color: gray;
+
+    &:hover {
+     
+      color: black;
+    }
+  }
+
+  > p {
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(151, 151, 151);
+
+    &:hover {
+      text-decoration: underline;
+      color: $button-hover-color;
+    }
+  }
+}
+
+.error {
+  color: $error-color;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.container {
+  height: 70px;
+}

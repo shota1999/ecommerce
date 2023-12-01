@@ -1,0 +1,21 @@
+$btn-background-color: rgb(12, 11, 16);
+$btn-text-color: white;
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    margin-top: 4.5rem;
+    background-color: $btn-background-color;
+    color: $btn-text-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,36 @@
+$background-color: #1B1A20;
+$text-color: white;
+$highlight-color: #EABF00;
+
+.container {
+  background-color: $background-color;
+  color: $text-color;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; 
+  top: 0;
+  right: 0;
+  cursor: pointer;
+
+  .icon {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .quantity {
+    background-color: $highlight-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $background-color;
+    font-weight: bold;
+    transform: translate(-30%, 80%);
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.totalQuantity {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 938px;
+   
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    width: 700px;
+ 
+  }
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .container {
+    width: 500px;
+   
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 743px) {
+  .container {
+    width: 100px;
+    
+  }
+}

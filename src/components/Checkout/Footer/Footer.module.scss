@@ -1,0 +1,30 @@
+$container-box-shadow: -1px -6px 5px 0px rgba(0, 0, 0, 0.75);
+$title-color: #5b5a5e;
+$price-color: #d1a104;
+
+.container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10em;
+  width: 100%;
+  box-shadow: $container-box-shadow;
+  -webkit-box-shadow: $container-box-shadow;
+  -moz-box-shadow: $container-box-shadow;
+
+  .title {
+    color: $title-color;
+    font-size: 20px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem;
+
+    .price {
+      color: $price-color;
+      font-size: 26px;
+    }
+  }
+}
